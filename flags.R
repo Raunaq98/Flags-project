@@ -72,3 +72,13 @@ sapply(unique_vals,length)
 #     7              8 
 
 
+# we need to see the how many countries with red on their flag have any animations as well
+
+sum(data_set$red)
+# [1] 153
+tapply(data_set$red,data_set$animate,sum)
+#  0   1 
+# 118  35 
+
+# hence, there are total of 153 flags with red on them
+# out of 153, 118 have no animations
